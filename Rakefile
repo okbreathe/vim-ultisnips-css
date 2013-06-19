@@ -82,7 +82,7 @@ private
 
   def unplaceholder(snippet)
     i = 0
-    snippet.gsub(/\{(.*?)\}/) { |placeholder| "${#{i += 1}:#{placeholder[1...-1]}}" }
+    snippet.gsub!(/\{(.*?)\}/) { |placeholder| "${#{i += 1}:#{placeholder[1...-1]}}" }
   end
 
   # Turns a raw snippet into a snippet of a given format
