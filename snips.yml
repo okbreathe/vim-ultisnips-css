@@ -101,8 +101,11 @@ simple: # Snippets that will expand.
   fwb:  "font-weight: bold"
   bold: "font-weight: bold"
   fw1:  "font-weight: 100"
+  fw2:  "font-weight: 200"
   fw3:  "font-weight: 300"
+  fw4:  "font-weight: 400"
   fw5:  "font-weight: 500"
+  fw6:  "font-weight: 600"
   fw7:  "font-weight: 700"
   fw9:  "font-weight: 900"
 
@@ -214,6 +217,9 @@ css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
   bbrad:  "border-bottom-radius: {3px}"
   bblrad: "border-bottom-left-radius: {3px}"
   bbrrad: "border-bottom-right-radius: {3px}"
+
+  bgs:  "background-size: {cover|contain|auto}"
+  bgsc: "background-size: cover"
 
   sh: "box-shadow: {0 1px 2px #fff}"
 
