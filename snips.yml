@@ -2,10 +2,8 @@
 simple: # Snippets that will expand.
 # ----------------------------------------------------------------------------
 
-  moa: "margin: 0 auto"
   m0a: "margin: 0 auto"
 
-  mopo: "margin: 0; padding: 0"
   m0p0: "margin: 0; padding: 0"
 
   m0: "margin: 0"
@@ -95,11 +93,9 @@ simple: # Snippets that will expand.
 
   fsn: "font-style: normal"
   fsi: "font-style: italic"
-  italic: "font-style: italic"
 
   fwn:  "font-weight: normal"
   fwb:  "font-weight: bold"
-  bold: "font-weight: bold"
   fw1:  "font-weight: 100"
   fw2:  "font-weight: 200"
   fw3:  "font-weight: 300"
@@ -107,6 +103,7 @@ simple: # Snippets that will expand.
   fw5:  "font-weight: 500"
   fw6:  "font-weight: 600"
   fw7:  "font-weight: 700"
+  fw8:  "font-weight: 800"
   fw9:  "font-weight: 900"
 
   va:  "vertical-align: {top|bottom|baseline|middle}"
