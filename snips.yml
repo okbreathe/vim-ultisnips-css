@@ -172,6 +172,19 @@ simple: # Snippets that will expand.
   tlf: "table-layout: fixed"
   tla: "table-layout: auto"
 
+  brad:   "border-radius: {3px}"
+  btrad:  "border-top-radius: {3px}"
+  btlrad: "border-top-left-radius: {3px}"
+  btrrad: "border-top-right-radius: {3px}"
+  bbrad:  "border-bottom-radius: {3px}"
+  bblrad: "border-bottom-left-radius: {3px}"
+  bbrrad: "border-bottom-right-radius: {3px}"
+
+  bgs:  "background-size: {cover|contain|auto}"
+  bgsc: "background-size: cover"
+
+  sh: "box-shadow: {0 1px 2px #fff}"
+
 # ----------------------------------------------------------------------------
 media: # Presets for media queries
 # ----------------------------------------------------------------------------
@@ -209,19 +222,6 @@ stylus-expressions: # Stylus-specific expressions
 # ----------------------------------------------------------------------------
 css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
 # ----------------------------------------------------------------------------
-
-  brad:   "border-radius: {3px}"
-  btrad:  "border-top-radius: {3px}"
-  btlrad: "border-top-left-radius: {3px}"
-  btrrad: "border-top-right-radius: {3px}"
-  bbrad:  "border-bottom-radius: {3px}"
-  bblrad: "border-bottom-left-radius: {3px}"
-  bbrrad: "border-bottom-right-radius: {3px}"
-
-  bgs:  "background-size: {cover|contain|auto}"
-  bgsc: "background-size: cover"
-
-  sh: "box-shadow: {0 1px 2px #fff}"
 
   bsb: "box-sizing: border-box"
   bsp: "box-sizing: padding-box"
