@@ -106,6 +106,9 @@ simple: # Snippets that will expand.
   fw8:  "font-weight: 800"
   fw9:  "font-weight: 900"
 
+  wwb: "word-wrap: break-word"
+  wwn: "word-wrap: normal"
+
   va:  "vertical-align: {top|bottom|baseline|middle}"
   vat:  "vertical-align: top"
   vab:  "vertical-align: bottom"
@@ -195,6 +198,8 @@ media: # Presets for media queries
 expressions: # Things that are not properties
 # ----------------------------------------------------------------------------
 
+  0nr: '0 0 no-repeat'
+  cnr: 'center center no-repeat'
   nr: "no-repeat"
   rx: "repeat-x"
   ry: "repeat-y"
