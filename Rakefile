@@ -28,27 +28,30 @@ class Snippets
     end
 
     out += @snips['expressions'].map do |key, val|
+      unplaceholder(val)
       block \
         name: key,
         desc: to_desc(val),
-        snip: unplaceholder(val)
+        snip: val
     end
 
     if format == :sass || format == :scss
       out += @snips['sass-expressions'].map do |key, val|
+        unplaceholder(val)
         block \
           name: key,
           desc: to_desc(val),
-          snip: unplaceholder(val)
+          snip: val
       end
     end
 
     if format == :stylus
       out += @snips['stylus-expressions'].map do |key, val|
+        unplaceholder(val)
         block \
           name: key,
           desc: to_desc(val),
-          snip: unplaceholder(val)
+          snip: val
       end
     end
 
