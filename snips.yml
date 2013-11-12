@@ -185,6 +185,8 @@ simple: # Snippets that will expand.
 
   sh: "box-shadow: {0 1px 2px #fff}"
 
+  ws: "white-space: {nowrap}"
+
 # ----------------------------------------------------------------------------
 media: # Presets for media queries
 # ----------------------------------------------------------------------------
