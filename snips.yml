@@ -133,7 +133,7 @@ simple: # Snippets that will expand.
 
   ti: "text-indent: {0}"
 
-  ts: "text-shadow: {0 1px 0 #333}"
+  tsh: "text-shadow: {0 1px 0 #333}"
 
   o:  "overflow: {hidden|auto|scroll}"
   os: "overflow: scroll"
@@ -183,7 +183,7 @@ simple: # Snippets that will expand.
   bgs:  "background-size: {cover|contain|auto}"
   bgsc: "background-size: cover"
 
-  sh: "box-shadow: {0 1px 2px #fff}"
+  bsh: "box-shadow: {0 1px 2px #fff}"
 
   ws: "white-space: {nowrap}"
 
