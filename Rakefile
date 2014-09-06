@@ -20,6 +20,10 @@ class Snippets
   def to_s(format)
     out = []
 
+    if format == :scss 
+      out << "extends css\npriority -50"
+    end
+
     out += @snips['simple'].map do |key, val|
       block \
         name: key,
@@ -73,7 +77,7 @@ class Snippets
     out.join("\n\n")
   end
 
-private
+  private
 
   def brackety?(format)
     format == :css || format == :scss
