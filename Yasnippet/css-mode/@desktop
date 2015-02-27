@@ -1,4 +1,0 @@
-# -*- mode: snippet -*-
-#name : @media (min-width: 768px) /* Desktop */
-# --
-@media (min-width: 768px) { /* Desktop */

@@ -191,10 +191,24 @@ simple: # Snippets that will expand.
 media: # Presets for media queries
 # ----------------------------------------------------------------------------
 
-  "@big":     "@media (min-width: 1180px) /* Big desktop */"
-  "@desktop": "@media (min-width: 768px) /* Desktop */"
-  "@tablet":  "@media (min-width: 480px) /* Tablet & Desktop */"
-  "@mobile":  "@media (max-width: 480px) /* Mobile */"
+  "@large":
+    desc: Larger than standard 960
+    snippet: "@media only screen and (min-width: 1180px)"
+  "@small":
+    desc: Smaller than standard 960
+    snippet: "@media only screen and (max-width: 959px)"
+  "@tablet":
+    desc: Tablet Portrait size to standard 960
+    snippet: "@media only screen and (min-width: 768px) and (max-width: 959px)"
+  "@mobile":
+    desc: All Mobile Sizes
+    snippet: "@media only screen and (max-width: 767px)"
+  "@mobile-land":
+    desc: Mobile Landscape Size to Tablet Portrait
+    snippet: "@media only screen and (min-width: 480px) and (max-width: 767px)"
+  "@mobile-port":
+    desc: Mobile Portrait Size to Mobile Landscape Size
+    snippet: "@media only screen and (max-width: 479px)"
 
 # ----------------------------------------------------------------------------
 expressions: # Things that are not properties

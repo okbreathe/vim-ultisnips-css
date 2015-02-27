@@ -8,6 +8,7 @@ task :build do
   snips = Snippets.new(data)
 
   [:css, :sass, :scss, :stylus].each do |format|
+    FileUtils.mkdir_p("UltiSnips")
     fn = "UltiSnips/#{format}.snippets"
 
     File.open(fn, 'w') { |f| f.write snips.to_ultisnips(format) }
@@ -96,11 +97,15 @@ class Snippets
     end
 
     unless format == :scss
-      out += @snips['media'].map do |key, val|
+      out += @snips['media'].map do |key, data|
+        val  = data["snippet"]
+        desc = "Media Query - #{data['desc']}"
+        snip = ["/* #{desc} */"].concat(brackety?(format) ?  [ "#{val} {", "  $0", "}" ] : [val,  "  $0"])
+
         {
           name: key,
-          desc: val,
-          snip: (brackety?(format) ? val.gsub(') ', ') { ') : val)
+          desc: desc,
+          snip: snip.join("\n")
         }
       end
     end

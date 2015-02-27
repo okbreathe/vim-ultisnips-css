@@ -620,20 +620,40 @@ snippet cf "clearfix()"
 clearfix()
 endsnippet
 
-snippet @big "@media (min-width: 1180px) /* Big desktop */"
-@media (min-width: 1180px) /* Big desktop */
+snippet @large "Media Query - Larger than standard 960"
+/* Media Query - Larger than standard 960 */
+@media only screen and (min-width: 1180px)
+  $0
 endsnippet
 
-snippet @desktop "@media (min-width: 768px) /* Desktop */"
-@media (min-width: 768px) /* Desktop */
+snippet @small "Media Query - Smaller than standard 960"
+/* Media Query - Smaller than standard 960 */
+@media only screen and (max-width: 959px)
+  $0
 endsnippet
 
-snippet @tablet "@media (min-width: 480px) /* Tablet & Desktop */"
-@media (min-width: 480px) /* Tablet & Desktop */
+snippet @tablet "Media Query - Tablet Portrait size to standard 960"
+/* Media Query - Tablet Portrait size to standard 960 */
+@media only screen and (min-width: 768px) and (max-width: 959px)
+  $0
 endsnippet
 
-snippet @mobile "@media (max-width: 480px) /* Mobile */"
-@media (max-width: 480px) /* Mobile */
+snippet @mobile "Media Query - All Mobile Sizes"
+/* Media Query - All Mobile Sizes */
+@media only screen and (max-width: 767px)
+  $0
+endsnippet
+
+snippet @mobile-land "Media Query - Mobile Landscape Size to Tablet Portrait"
+/* Media Query - Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px)
+  $0
+endsnippet
+
+snippet @mobile-port "Media Query - Mobile Portrait Size to Mobile Landscape Size"
+/* Media Query - Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px)
+  $0
 endsnippet
 
 snippet bsb "box-sizing: border-box"

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : Media Query - Mobile Landscape Size to Tablet Portrait
+# --
+/* Media Query - Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px)
+  $0

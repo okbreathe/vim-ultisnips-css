@@ -1,4 +1,7 @@
 # -*- mode: snippet -*-
-#name : @media (max-width: 480px) /* Mobile */
+#name : Media Query - All Mobile Sizes
 # --
-@media (max-width: 480px) { /* Mobile */
+/* Media Query - All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+  $0
+}

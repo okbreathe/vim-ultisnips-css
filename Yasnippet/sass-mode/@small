@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : Media Query - Smaller than standard 960
+# --
+/* Media Query - Smaller than standard 960 */
+@media only screen and (max-width: 959px)
+  $0
