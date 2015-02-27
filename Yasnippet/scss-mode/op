@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : opacity: ___
+# --
+@include opacity(${1:0});

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : user-select: ___
+# --
+@include user-select(${1:none|text|toggle|element|elements|all});

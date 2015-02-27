@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : transform: ___
+# --
+@include transform(${1:scale(1.0)});

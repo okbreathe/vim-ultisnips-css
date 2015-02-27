@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : animation: ___ ___
+# --
+@include animation(${1:name} ${2:300ms linear infinite});

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : user-select: text
+# --
+@include user-select(text);

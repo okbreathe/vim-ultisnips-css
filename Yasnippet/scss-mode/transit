@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : transition: ___
+# --
+@include transition(${1:all 300ms ease});

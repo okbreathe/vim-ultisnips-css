@@ -13,9 +13,10 @@ task :build do
     File.open(fn, 'w') { |f| f.write snips.to_ultisnips(format) }
   end
 
+  # Less is just an extension of CSS
   File.open("UltiSnips/less.snippets", 'w') { |f| f.write snips.extend_css  }
 
-  [:css, :sass, :stylus].each do |format|
+  [:scss, :css, :sass, :stylus].each do |format|
     snips.to_yasnippet(format).each do |snippet|
       dn = "Yasnippet/#{format}-mode/"
       fn = snippet[:name]
@@ -32,20 +33,24 @@ class Snippets
     @snips = snips
   end
 
+  # Generate content for an Ultisnips file
   def to_ultisnips(format)
     lines = expand(format).map{|h| ultisnip_block(h) }
     lines.unshift(extend_css(-50)) if format == :scss
     lines.join("\n\n")
   end
 
+  # Generate a list of yasnippet snippets
   def to_yasnippet(format)
     expand(format).map{|h| yasnippet_block(h) }
   end
 
+  # Add priority header to certain file types
   def extend_css(priority = nil)
     ["extends css", ("priority #{priority}" if priority)].compact.join("\n")
   end
 
+  # Expand our YAML into valid snippets
   def expand(format)
     out = []
 
@@ -57,15 +62,15 @@ class Snippets
           snip: to_snippet(val, format)
         }
       end
-    end
 
-    out += @snips['expressions'].map do |key, val|
-      val = unplaceholder(val)
-      {
-        name: key,
-        desc: to_desc(val),
-        snip: val
-      }
+      out += @snips['expressions'].map do |key, val|
+        val = unplaceholder(val)
+        {
+          name: key,
+          desc: to_desc(val),
+          snip: val
+        }
+      end
     end
 
     if format == :sass || format == :scss
@@ -90,12 +95,14 @@ class Snippets
       end
     end
 
-    out += @snips['media'].map do |key, val|
-      {
-        name: key,
-        desc: val,
-        snip: (brackety?(format) ? val.gsub(') ', ') { ') : val)
-      }
+    unless format == :scss
+      out += @snips['media'].map do |key, val|
+        {
+          name: key,
+          desc: val,
+          snip: (brackety?(format) ? val.gsub(') ', ') { ') : val)
+        }
+      end
     end
 
     out += @snips['css3'].map do |key, val|
