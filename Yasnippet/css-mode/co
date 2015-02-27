@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : color: ___
+# --
+color: ${1:#333};

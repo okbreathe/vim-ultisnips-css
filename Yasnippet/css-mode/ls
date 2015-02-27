@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : letter-spacing: ___
+# --
+letter-spacing: ${1:0};

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : user-select: text
+# --
++user-select(text)

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background-color: ___
+# --
+background-color: ${1:transparent};

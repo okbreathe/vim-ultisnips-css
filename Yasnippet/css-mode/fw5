@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : font-weight: 500
+# --
+font-weight: 500;

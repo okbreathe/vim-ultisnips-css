@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : overflow-y: scroll
+# --
+overflow-y: scroll;

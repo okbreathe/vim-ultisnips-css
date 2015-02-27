@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : transition: ___
+# --
+transition: ${1:all 300ms ease};

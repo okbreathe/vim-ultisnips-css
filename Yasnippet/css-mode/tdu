@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : text-decoration: underline
+# --
+text-decoration: underline;

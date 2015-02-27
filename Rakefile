@@ -2,79 +2,111 @@ desc "Make the sass/scss snippets"
 
 task :build do
   require 'yaml'
-  data = YAML::load_file('snips.yml')
+  require 'fileutils'
+
+  data  = YAML::load_file('snips.yml')
   snips = Snippets.new(data)
 
   [:css, :sass, :scss, :stylus].each do |format|
     fn = "UltiSnips/#{format}.snippets"
-    puts fn
-    File.open(fn, 'w') { |f| f.write snips.to_s(format) }
+
+    File.open(fn, 'w') { |f| f.write snips.to_ultisnips(format) }
+  end
+
+  File.open("UltiSnips/less.snippets", 'w') { |f| f.write snips.extend_css  }
+
+  [:css, :sass, :stylus].each do |format|
+    snips.to_yasnippet(format).each do |snippet|
+      dn = "Yasnippet/#{format}-mode/"
+      fn = snippet[:name]
+      FileUtils.mkdir_p(dn)
+      File.open(dn + fn, 'w') { |f| f.write snippet[:snip] }
+    end
   end
 end
 
 class Snippets
+  attr_reader :snips
+
   def initialize(snips)
     @snips = snips
   end
 
-  def to_s(format)
+  def to_ultisnips(format)
+    lines = expand(format).map{|h| ultisnip_block(h) }
+    lines.unshift(extend_css(-50)) if format == :scss
+    lines.join("\n\n")
+  end
+
+  def to_yasnippet(format)
+    expand(format).map{|h| yasnippet_block(h) }
+  end
+
+  def extend_css(priority = nil)
+    ["extends css", ("priority #{priority}" if priority)].compact.join("\n")
+  end
+
+  def expand(format)
     out = []
 
-    if format == :scss 
-      out << "extends css\npriority -50"
-    end
-
-    out += @snips['simple'].map do |key, val|
-      block \
-        name: key,
-        desc: to_desc(val),
-        snip: to_snippet(val, format)
+    unless format == :scss
+      out += @snips['simple'].map do |key, val|
+        {
+          name: key,
+          desc: to_desc(val),
+          snip: to_snippet(val, format)
+        }
+      end
     end
 
     out += @snips['expressions'].map do |key, val|
-      unplaceholder(val)
-      block \
+      val = unplaceholder(val)
+      {
         name: key,
         desc: to_desc(val),
         snip: val
+      }
     end
 
     if format == :sass || format == :scss
       out += @snips['sass-expressions'].map do |key, val|
-        unplaceholder(val)
-        block \
+        val = unplaceholder(val)
+        {
           name: key,
           desc: to_desc(val),
           snip: val
+        }
       end
     end
 
     if format == :stylus
       out += @snips['stylus-expressions'].map do |key, val|
-        unplaceholder(val)
-        block \
+        val = unplaceholder(val)
+        {
           name: key,
           desc: to_desc(val),
           snip: val
+        }
       end
     end
 
     out += @snips['media'].map do |key, val|
-      block \
+      {
         name: key,
         desc: val,
         snip: (brackety?(format) ? val.gsub(') ', ') { ') : val)
+      }
     end
 
     out += @snips['css3'].map do |key, val|
-      block \
+      {
         name: key,
         desc: to_desc(val),
         snip: to_snippet(val, format, true)
+      }
     end
 
-
-    out.join("\n\n")
+    out
   end
 
   private
@@ -89,15 +121,13 @@ class Snippets
 
   def unplaceholder(snippet)
     i = 0
-    snippet.gsub!(/\{(.*?)\}/) { |placeholder| "${#{i += 1}:#{placeholder[1...-1]}}" }
+    snippet.gsub(/\{(.*?)\}/) { |placeholder| "${#{i += 1}:#{placeholder[1...-1]}}" }
   end
 
   # Turns a raw snippet into a snippet of a given format
   def to_snippet(value, format, mixinify=false)
-    snippet = value.dup
+    snippet = unplaceholder(value.dup.gsub(/; /, "\n"))
 
-    snippet.gsub!(/; /, "\n")
-    unplaceholder snippet
     if mixinify
       if format == :sass
         snippet.gsub!(/^(.*?): (.*?)$/, "+\\1(\\2)")
@@ -111,12 +141,22 @@ class Snippets
     snippet
   end
 
-  # Formats a block
-  def block(options)
+  # Formats a ultisnip block
+  def ultisnip_block(options)
     [
       "snippet #{options[:name]} \"#{options[:desc]}\"",
       options[:snip],
       "endsnippet"
     ].join("\n")
+  end
+
+  # Formats a yasnippet block
+  def yasnippet_block(options)
+    options.merge(snip: [ 
+      "# -*- mode: snippet -*-",
+      "#name : #{options[:desc]}", 
+      "# --", 
+      options[:snip] 
+    ].join("\n"))
   end
 end

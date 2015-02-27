@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : vertical-align: ___
+# --
+vertical-align: ${1:top|bottom|baseline|middle};

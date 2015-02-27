@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : text-transform: none
+# --
+text-transform: none;

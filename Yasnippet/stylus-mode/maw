@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : max-width: ___
+# --
+max-width: ${1:none}

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : table-layout: fixed
+# --
+table-layout: fixed;

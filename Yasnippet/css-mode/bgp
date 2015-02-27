@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background-position: ___
+# --
+background-position: ${1:x y};

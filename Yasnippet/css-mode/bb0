@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : border-bottom: 0
+# --
+border-bottom: 0;

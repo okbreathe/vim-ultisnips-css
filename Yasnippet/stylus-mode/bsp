@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : box-sizing: padding-box
+# --
+box-sizing: padding-box

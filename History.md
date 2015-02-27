@@ -1,3 +1,8 @@
+v2.1 - February 26, 2015
+--------------------
+
+Add Yasnippet generation.
+
 v2.0 - June 13, 2013
 --------------------
 

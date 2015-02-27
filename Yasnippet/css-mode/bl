@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : border-left: ___
+# --
+border-left: ${1:solid 1px #333};

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background-repeat: ___
+# --
+background-repeat: ${1:no-repeat};

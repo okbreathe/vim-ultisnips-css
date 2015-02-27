@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : display: ___
+# --
+display: ${1:none|inline|block}

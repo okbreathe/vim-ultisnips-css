@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : font-family: ___
+# --
+font-family: ${1:sans-serif}

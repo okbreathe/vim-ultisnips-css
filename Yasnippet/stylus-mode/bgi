@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background-image: ___
+# --
+background-image: ${1:url()}

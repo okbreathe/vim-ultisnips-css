@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background: ___
+# --
+background: ${1:#fff url(image.png) no-repeat left top fixed}

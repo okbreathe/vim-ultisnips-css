@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : min-height: ___
+# --
+min-height: ${1:100%}

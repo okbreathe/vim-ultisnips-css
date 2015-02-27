@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : text-indent: ___
+# --
+text-indent: ${1:0}

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : visibility: ___
+# --
+visibility: ${1:visible|hidden|collapse};

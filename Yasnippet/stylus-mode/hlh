@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+#name : height: ___; line-height: ___
+# --
+height: ${1:0px}
+line-height: ${2:1.5}

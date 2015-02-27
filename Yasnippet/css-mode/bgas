@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background-attachment: scroll
+# --
+background-attachment: scroll;

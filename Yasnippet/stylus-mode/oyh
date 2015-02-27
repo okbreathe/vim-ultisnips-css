@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : overflow-y: hidden
+# --
+overflow-y: hidden

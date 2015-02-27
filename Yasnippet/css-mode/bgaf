@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background-attachment: fixed
+# --
+background-attachment: fixed;

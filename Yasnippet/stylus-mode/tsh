@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : text-shadow: ___
+# --
+text-shadow: ${1:0 1px 0 #333}

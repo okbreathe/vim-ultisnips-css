@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : @media (min-width: 480px) /* Tablet & Desktop */
+# --
+@media (min-width: 480px) { /* Tablet & Desktop */

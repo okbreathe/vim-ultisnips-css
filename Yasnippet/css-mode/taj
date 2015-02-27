@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : text-align: justify
+# --
+text-align: justify;

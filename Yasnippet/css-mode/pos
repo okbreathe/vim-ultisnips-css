@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : position: static
+# --
+position: static;

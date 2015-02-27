@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : border-bottom-right-radius: ___
+# --
+border-bottom-right-radius: ${1:3px}

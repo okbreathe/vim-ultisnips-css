@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : overflow-x: auto
+# --
+overflow-x: auto;

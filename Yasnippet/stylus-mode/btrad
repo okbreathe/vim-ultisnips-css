@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : border-top-radius: ___
+# --
+border-top-radius: ${1:3px}

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background-attachment: ___
+# --
+background-attachment: ${1:scroll|fixed|local}

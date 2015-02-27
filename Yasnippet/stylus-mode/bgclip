@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background-clip: padding-box
+# --
+background-clip: padding-box

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : background-size: ___
+# --
+background-size: ${1:cover|contain|auto}

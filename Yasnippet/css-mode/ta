@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : text-align: ___
+# --
+text-align: ${1:left|right|center|justify};

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : @media (max-width: 480px) /* Mobile */
+# --
+@media (max-width: 480px) /* Mobile */

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : overflow: ___
+# --
+overflow: ${1:hidden|auto|scroll}

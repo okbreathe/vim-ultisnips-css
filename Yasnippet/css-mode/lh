@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : line-height: ___
+# --
+line-height: ${1:1.5};

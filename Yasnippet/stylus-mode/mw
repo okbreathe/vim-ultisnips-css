@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : min-width: ___
+# --
+min-width: ${1:100%}

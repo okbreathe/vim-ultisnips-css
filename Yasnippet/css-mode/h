@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : height: ___
+# --
+height: ${1:0};

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : max-height: ___
+# --
+max-height: ${1:none}

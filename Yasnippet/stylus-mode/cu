@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : cursor: ___
+# --
+cursor: ${1:default|pointer|text}

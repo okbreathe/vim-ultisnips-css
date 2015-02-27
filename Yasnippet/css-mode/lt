@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+#name : left: ___; top: ___
+# --
+left: ${1:0};
+top: ${2:0};

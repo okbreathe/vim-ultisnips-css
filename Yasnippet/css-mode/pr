@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : padding-right: ___
+# --
+padding-right: ${1:0};
