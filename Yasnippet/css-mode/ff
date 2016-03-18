@@ -1,4 +1,4 @@
 # -*- mode: snippet -*-
-#name : flex-flow: ___ ___
+#name : font-family: ___
 # --
-flex-flow: ${1:row} ${2:nowrap};
+font-family: ${1:sans-serif};
