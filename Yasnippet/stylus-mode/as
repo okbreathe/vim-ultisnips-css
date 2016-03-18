@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : align-self: ___
+# --
+align-self: ${1:auto|flex-start|flex-end|center|baseline|stretch}

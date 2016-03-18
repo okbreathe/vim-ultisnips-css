@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : order: ___
+# --
+@include order(${1:1});

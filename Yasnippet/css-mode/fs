@@ -1,4 +1,4 @@
 # -*- mode: snippet -*-
-#name : font-size: ___
+#name : flex-shrink: ___
 # --
-font-size: ${1:1em};
+flex-shrink: ${1:1};

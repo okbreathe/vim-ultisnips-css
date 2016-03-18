@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : display: flex
+# --
+display: flex;

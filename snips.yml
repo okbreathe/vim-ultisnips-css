@@ -84,6 +84,8 @@ simple: # Snippets that will expand.
 
   d:   "display: {none|inline|block}"
   di:  "display: inline"
+  df:  "display: flex"
+  dif: "display: inline-flex"
   dn:  "display: none"
   db:  "display: block"
   dib: "display: inline-block"
@@ -240,6 +242,18 @@ stylus-expressions: # Stylus-specific expressions
 # ----------------------------------------------------------------------------
 css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
 # ----------------------------------------------------------------------------
+  fd: "flex-direction: row | row-reverse | column | column-reverse"
+  fo: "order: {1}"
+  fw: "flex-wrap: {nowrap|wrap|wrap-reverse}"
+  fg: "flex-grow: {0}"
+  fs: "flex-shrink: {1}"
+  ff: "flex-flow: {row} {nowrap}"
+  fb: "flex-basis: {default} {auto}"
+  jc: "justify-content: {flex-start|flex-end|center|space-between|space-around}"
+  fl: "flex: {0} {1} {auto}"
+  as: "align-self: {auto|flex-start|flex-end|center|baseline|stretch}"
+  ai: "align-items: {flex-start|flex-end|center|baseline|stretch}"
+  ac: "align-content: {flex-start|flex-end|center|space-between|space-around|stretch}"
 
   bsb: "box-sizing: border-box"
   bsp: "box-sizing: padding-box"

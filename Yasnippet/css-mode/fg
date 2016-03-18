@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : flex-grow: ___
+# --
+flex-grow: ${1:0};

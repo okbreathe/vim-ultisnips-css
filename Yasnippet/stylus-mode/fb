@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : flex-basis: ___ ___
+# --
+flex-basis: ${1:default} ${2:auto}

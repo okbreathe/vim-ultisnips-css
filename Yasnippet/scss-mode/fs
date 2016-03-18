@@ -1,4 +1,4 @@
 # -*- mode: snippet -*-
 #name : flex-shrink: ___
 # --
-+flex-shrink(${1:1})
+@include flex-shrink(${1:1});

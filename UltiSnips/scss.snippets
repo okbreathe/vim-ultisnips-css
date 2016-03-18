@@ -13,6 +13,54 @@ snippet cf "+pie-clearfix"
 +pie-clearfix
 endsnippet
 
+snippet fd "flex-direction: row | row-reverse | column | column-reverse"
+@include flex-direction(row | row-reverse | column | column-reverse);
+endsnippet
+
+snippet fo "order: ___"
+@include order(${1:1});
+endsnippet
+
+snippet fw "flex-wrap: ___"
+@include flex-wrap(${1:nowrap|wrap|wrap-reverse});
+endsnippet
+
+snippet fg "flex-grow: ___"
+@include flex-grow(${1:0});
+endsnippet
+
+snippet fs "flex-shrink: ___"
+@include flex-shrink(${1:1});
+endsnippet
+
+snippet ff "flex-flow: ___ ___"
+@include flex-flow(${1:row} ${2:nowrap});
+endsnippet
+
+snippet fb "flex-basis: ___ ___"
+@include flex-basis(${1:default} ${2:auto});
+endsnippet
+
+snippet jc "justify-content: ___"
+@include justify-content(${1:flex-start|flex-end|center|space-between|space-around});
+endsnippet
+
+snippet fl "flex: ___ ___ ___"
+@include flex(${1:0} ${2:1} ${3:auto});
+endsnippet
+
+snippet as "align-self: ___"
+@include align-self(${1:auto|flex-start|flex-end|center|baseline|stretch});
+endsnippet
+
+snippet ai "align-items: ___"
+@include align-items(${1:flex-start|flex-end|center|baseline|stretch});
+endsnippet
+
+snippet ac "align-content: ___"
+@include align-content(${1:flex-start|flex-end|center|space-between|space-around|stretch});
+endsnippet
+
 snippet bsb "box-sizing: border-box"
 @include box-sizing(border-box);
 endsnippet

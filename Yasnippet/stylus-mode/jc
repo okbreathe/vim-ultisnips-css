@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : justify-content: ___
+# --
+justify-content: ${1:flex-start|flex-end|center|space-between|space-around}

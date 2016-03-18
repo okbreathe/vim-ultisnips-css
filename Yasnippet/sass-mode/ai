@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : align-items: ___
+# --
++align-items(${1:flex-start|flex-end|center|baseline|stretch})

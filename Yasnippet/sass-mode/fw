@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : flex-wrap: ___
+# --
++flex-wrap(${1:nowrap|wrap|wrap-reverse})
