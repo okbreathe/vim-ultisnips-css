@@ -242,7 +242,7 @@ stylus-expressions: # Stylus-specific expressions
 # ----------------------------------------------------------------------------
 css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
 # ----------------------------------------------------------------------------
-  fl: "flex: {0} {1} {auto}"
+  flx: "flex: {0} {1} {auto}"
   fld: "flex-direction: row | row-reverse | column | column-reverse"
   flo: "order: {1}"
   flw: "flex-wrap: {nowrap|wrap|wrap-reverse}"
@@ -259,7 +259,6 @@ css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
   bsp: "box-sizing: padding-box"
 
   trans:   "transition: {all 300ms ease}"
-  transit: "transition: {all 300ms ease}"
   xf:      "transform: {scale(1.0)}"
   xform:   "transform: {scale(1.0)}"
 

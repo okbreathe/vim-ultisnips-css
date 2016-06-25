@@ -1,4 +1,4 @@
 # -*- mode: snippet -*-
-#name : flex: ___ ___ ___
+#name : float: left
 # --
-flex: ${1:0} ${2:1} ${3:auto};
+float: left;
