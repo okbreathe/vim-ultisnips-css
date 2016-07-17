@@ -49,6 +49,26 @@ snippet jc "justify-content: ___"
 @include justify-content(${1:flex-start|flex-end|center|space-between|space-around});
 endsnippet
 
+snippet jsfs "justify-content: flex-start"
+@include justify-content(flex-start);
+endsnippet
+
+snippet jsfe "justify-content: flex-end"
+@include justify-content(flex-end);
+endsnippet
+
+snippet jsc "justify-content: center"
+@include justify-content(center);
+endsnippet
+
+snippet jssb "justify-content: space-between"
+@include justify-content(space-between);
+endsnippet
+
+snippet jssa "justify-content: space-around"
+@include justify-content(space-around);
+endsnippet
+
 snippet as "align-self: ___"
 @include align-self(${1:auto|flex-start|flex-end|center|baseline|stretch});
 endsnippet
@@ -57,16 +77,40 @@ snippet ai "align-items: ___"
 @include align-items(${1:flex-start|flex-end|center|baseline|stretch});
 endsnippet
 
+snippet aifs "align-items: flex-start"
+@include align-items(flex-start);
+endsnippet
+
+snippet aife "align-items: flex-end"
+@include align-items(flex-end);
+endsnippet
+
+snippet aic "align-items: center"
+@include align-items(center);
+endsnippet
+
+snippet aib "align-items: baseline"
+@include align-items(baseline);
+endsnippet
+
+snippet ais "align-items: stretch"
+@include align-items(stretch);
+endsnippet
+
 snippet ac "align-content: ___"
 @include align-content(${1:flex-start|flex-end|center|space-between|space-around|stretch});
+endsnippet
+
+snippet acc "align-content: center"
+@include align-content(center);
 endsnippet
 
 snippet bsb "box-sizing: border-box"
 @include box-sizing(border-box);
 endsnippet
 
-snippet bsp "box-sizing: padding-box"
-@include box-sizing(padding-box);
+snippet bsc "box-sizing: content-box"
+@include box-sizing(content-box);
 endsnippet
 
 snippet trans "transition: ___"

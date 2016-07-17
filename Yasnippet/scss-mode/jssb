@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : justify-content: space-between
+# --
+@include justify-content(space-between);

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : justify-content: center
+# --
+@include justify-content(center);

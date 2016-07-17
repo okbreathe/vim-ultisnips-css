@@ -83,7 +83,7 @@ snippet pr "padding-right: ___"
 padding-right: ${1:0};
 endsnippet
 
-snippet b "border: ___"
+snippet bo "border: ___"
 border: ${1:solid 1px #333};
 endsnippet
 
@@ -512,6 +512,14 @@ snippet r "right: ___"
 right: ${1:0};
 endsnippet
 
+snippet t "top: ___"
+top: ${1:0};
+endsnippet
+
+snippet b "top: ___"
+top: ${1:0};
+endsnippet
+
 snippet lt "left: ___; top: ___"
 left: ${1:0};
 top: ${2:0};
@@ -694,6 +702,26 @@ snippet jc "justify-content: ___"
 justify-content: ${1:flex-start|flex-end|center|space-between|space-around};
 endsnippet
 
+snippet jsfs "justify-content: flex-start"
+justify-content: flex-start;
+endsnippet
+
+snippet jsfe "justify-content: flex-end"
+justify-content: flex-end;
+endsnippet
+
+snippet jsc "justify-content: center"
+justify-content: center;
+endsnippet
+
+snippet jssb "justify-content: space-between"
+justify-content: space-between;
+endsnippet
+
+snippet jssa "justify-content: space-around"
+justify-content: space-around;
+endsnippet
+
 snippet as "align-self: ___"
 align-self: ${1:auto|flex-start|flex-end|center|baseline|stretch};
 endsnippet
@@ -702,16 +730,40 @@ snippet ai "align-items: ___"
 align-items: ${1:flex-start|flex-end|center|baseline|stretch};
 endsnippet
 
+snippet aifs "align-items: flex-start"
+align-items: flex-start;
+endsnippet
+
+snippet aife "align-items: flex-end"
+align-items: flex-end;
+endsnippet
+
+snippet aic "align-items: center"
+align-items: center;
+endsnippet
+
+snippet aib "align-items: baseline"
+align-items: baseline;
+endsnippet
+
+snippet ais "align-items: stretch"
+align-items: stretch;
+endsnippet
+
 snippet ac "align-content: ___"
 align-content: ${1:flex-start|flex-end|center|space-between|space-around|stretch};
+endsnippet
+
+snippet acc "align-content: center"
+align-content: center;
 endsnippet
 
 snippet bsb "box-sizing: border-box"
 box-sizing: border-box;
 endsnippet
 
-snippet bsp "box-sizing: padding-box"
-box-sizing: padding-box;
+snippet bsc "box-sizing: content-box"
+box-sizing: content-box;
 endsnippet
 
 snippet trans "transition: ___"

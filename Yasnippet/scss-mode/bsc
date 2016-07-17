@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : box-sizing: content-box
+# --
+@include box-sizing(content-box);

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : align-items: stretch
+# --
+@include align-items(stretch);
