@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : justify-content: space-around
+# --
+@include justify-content(space-around);

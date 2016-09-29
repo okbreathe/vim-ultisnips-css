@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : align-self: flex-start
+# --
+align-self: flex-start;

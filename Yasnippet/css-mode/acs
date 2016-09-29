@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : align-content: stretch
+# --
+align-content: stretch;

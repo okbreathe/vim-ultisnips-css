@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : justify-content: flex-end
+# --
+@include justify-content(flex-end);

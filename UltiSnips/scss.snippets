@@ -49,28 +49,52 @@ snippet jc "justify-content: ___"
 @include justify-content(${1:flex-start|flex-end|center|space-between|space-around});
 endsnippet
 
-snippet jsfs "justify-content: flex-start"
+snippet jcfs "justify-content: flex-start"
 @include justify-content(flex-start);
 endsnippet
 
-snippet jsfe "justify-content: flex-end"
+snippet jcfe "justify-content: flex-end"
 @include justify-content(flex-end);
 endsnippet
 
-snippet jsc "justify-content: center"
+snippet jcc "justify-content: center"
 @include justify-content(center);
 endsnippet
 
-snippet jssb "justify-content: space-between"
+snippet jcsb "justify-content: space-between"
 @include justify-content(space-between);
 endsnippet
 
-snippet jssa "justify-content: space-around"
+snippet jcsa "justify-content: space-around"
 @include justify-content(space-around);
 endsnippet
 
 snippet as "align-self: ___"
 @include align-self(${1:auto|flex-start|flex-end|center|baseline|stretch});
+endsnippet
+
+snippet asa "align-self: auto"
+@include align-self(auto);
+endsnippet
+
+snippet asfs "align-self: flex-start"
+@include align-self(flex-start);
+endsnippet
+
+snippet asfe "align-self: flex-end"
+@include align-self(flex-end);
+endsnippet
+
+snippet asc "align-self: center"
+@include align-self(center);
+endsnippet
+
+snippet asb "align-self: baseline"
+@include align-self(baseline);
+endsnippet
+
+snippet ass "align-self: stretch"
+@include align-self(stretch);
 endsnippet
 
 snippet ai "align-items: ___"
@@ -103,6 +127,26 @@ endsnippet
 
 snippet acc "align-content: center"
 @include align-content(center);
+endsnippet
+
+snippet acfs "align-content: flex-start"
+@include align-content(flex-start);
+endsnippet
+
+snippet acfe "align-content: flex-end"
+@include align-content(flex-end);
+endsnippet
+
+snippet acs "align-content: stretch"
+@include align-content(stretch);
+endsnippet
+
+snippet acsa "align-content: space-around"
+@include align-content(space-around);
+endsnippet
+
+snippet acsb "align-content: space-between"
+@include align-content(space-between);
 endsnippet
 
 snippet bsb "box-sizing: border-box"
