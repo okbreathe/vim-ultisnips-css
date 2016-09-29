@@ -164,7 +164,7 @@ simple: # Snippets that will expand.
   l: "left: {0}"
   r: "right: {0}"
   t: "top: {0}"
-  b: "top: {0}"
+  b: "bottom: {0}"
   lt: "left: {0}; top: {0}"
   lb: "left: {0}; bottom: {0}"
   rt: "right: {0}; top: {0}"
