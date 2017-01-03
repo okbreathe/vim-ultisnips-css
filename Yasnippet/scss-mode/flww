@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : flex-wrap: wrap
+# --
+@include flex-wrap(wrap);

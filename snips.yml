@@ -245,9 +245,16 @@ stylus-expressions: # Stylus-specific expressions
 css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
 # ----------------------------------------------------------------------------
   flx: "flex: {0} {1} {auto}"
-  fld: "flex-direction: row | row-reverse | column | column-reverse"
+  fld: "flex-direction: { row | row-reverse | column | column-reverse }"
+  fldr: "flex-direction: row"
+  fldrr: "flex-direction: row-reverse"
+  fldc: "flex-direction: column"
+  fldcr: "flex-direction: column-reverse"
   flo: "order: {1}"
   flw: "flex-wrap: {nowrap|wrap|wrap-reverse}"
+  flwn: "flex-wrap: nowrap"
+  flww: "flex-wrap: wrap"
+  flwr: "flex-wrap: wrap-reverse"
   flg: "flex-grow: {0}"
   fls: "flex-shrink: {1}"
   flf: "flex-flow: {row} {nowrap}"

@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : flex-wrap: nowrap
+# --
+@include flex-wrap(nowrap);

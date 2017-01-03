@@ -17,8 +17,24 @@ snippet flx "flex: ___ ___ ___"
 @include flex(${1:0} ${2:1} ${3:auto});
 endsnippet
 
-snippet fld "flex-direction: row | row-reverse | column | column-reverse"
-@include flex-direction(row | row-reverse | column | column-reverse);
+snippet fld "flex-direction: ___"
+@include flex-direction(${1: row | row-reverse | column | column-reverse });
+endsnippet
+
+snippet fldr "flex-direction: row"
+@include flex-direction(row);
+endsnippet
+
+snippet fldrr "flex-direction: row-reverse"
+@include flex-direction(row-reverse);
+endsnippet
+
+snippet fldc "flex-direction: column"
+@include flex-direction(column);
+endsnippet
+
+snippet fldcr "flex-direction: column-reverse"
+@include flex-direction(column-reverse);
 endsnippet
 
 snippet flo "order: ___"
@@ -27,6 +43,18 @@ endsnippet
 
 snippet flw "flex-wrap: ___"
 @include flex-wrap(${1:nowrap|wrap|wrap-reverse});
+endsnippet
+
+snippet flwn "flex-wrap: nowrap"
+@include flex-wrap(nowrap);
+endsnippet
+
+snippet flww "flex-wrap: wrap"
+@include flex-wrap(wrap);
+endsnippet
+
+snippet flwr "flex-wrap: wrap-reverse"
+@include flex-wrap(wrap-reverse);
 endsnippet
 
 snippet flg "flex-grow: ___"

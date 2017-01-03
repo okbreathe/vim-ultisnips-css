@@ -1,4 +1,4 @@
 # -*- mode: snippet -*-
-#name : flex-direction: row | row-reverse | column | column-reverse
+#name : flex-direction: ___
 # --
-flex-direction: row | row-reverse | column | column-reverse
+flex-direction: ${1: row | row-reverse | column | column-reverse }

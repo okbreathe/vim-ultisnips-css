@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+#name : flex-direction: row-reverse
+# --
+@include flex-direction(row-reverse);
