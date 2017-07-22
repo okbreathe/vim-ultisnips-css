@@ -108,6 +108,14 @@ simple: # Snippets that will expand.
   fw8:  "font-weight: 800"
   fw9:  "font-weight: 900"
 
+  lstc:  "list-tyle-type: circle"
+  lstd:  "list-tyle-type: disc"
+  lstn:  "list-tyle-type: none"
+  lsts:  "list-tyle-type: square"
+  lstu:  "list-tyle-type: upper-roman"
+  lstl:  "list-tyle-type: lower-alpha"
+  lsn:  "list-tyle: none"
+
   wwb: "word-wrap: break-word"
   wwn: "word-wrap: normal"
 
