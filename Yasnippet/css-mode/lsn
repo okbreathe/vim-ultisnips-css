@@ -1,4 +1,4 @@
 # -*- mode: snippet -*-
-#name : list-tyle: none
+#name : list-style: none
 # --
-list-tyle: none;
+list-style: none;

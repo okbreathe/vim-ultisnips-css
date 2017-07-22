@@ -1,4 +1,4 @@
 # -*- mode: snippet -*-
-#name : list-tyle-type: upper-roman
+#name : list-style-type: upper-roman
 # --
-list-tyle-type: upper-roman;
+list-style-type: upper-roman;

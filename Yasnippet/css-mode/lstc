@@ -1,4 +1,4 @@
 # -*- mode: snippet -*-
-#name : list-tyle-type: circle
+#name : list-style-type: circle
 # --
-list-tyle-type: circle;
+list-style-type: circle;
